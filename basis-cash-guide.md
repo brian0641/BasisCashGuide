@@ -1,6 +1,6 @@
 # Practical Guide to Navigating the Basis Cash Monetary Expansion/Contraction Cycles
 
-Basis Cash is a is an open-source, permissionless algorithmic stablecoin with the goal of reviving the original [basis.io](http://basis.io/) project. The offical docs are [here]([https://docs.basis.cash/). 
+Basis Cash is a is an open-source, permissionless algorithmic stablecoin with the goal of reviving the original [basis.io](http://basis.io/) project. The offical docs are [here](https://docs.basis.cash/). 
 
 The stablecoin token of the Basis Cash system is the BAC token. When the protocol is mature, the value of BAC should should be relatively stable at one dollar, and can be used similarly to other popular stablecoins such as DAI, USDC, or USDT. Unlike other algorithmic stablecoin projects, the number of BAC in your wallet won't unpredictably rebase, and there is no opportunity-lost cost in failing to stake your BAC to obtain more BAC. BAC holders can use BAC to do normal stably-coin things.
 
