@@ -36,7 +36,7 @@ Basis Bonds (BAB) are the mechanism used to remove BAC from circulation during p
 
 The price of one BAB, in DAI, is: `(oracle_price)^2`.
 
-Since BAC is burnt to generate BAB, it might be easier to think of the BAB price in terms of BAC. For each BAC burnt, the amount of BAB receied is: `1/oracle_price`.
+Since BAC is burnt to generate BAB, it might be easier to think of the BAB price in terms of BAC. For each BAC burnt, the amount of BAB received is: `1/oracle_price`.
 
 If BAC is trading below one, and you believe that the protocol will work and BAC will eventually get back to parity, you have two options as a trader:
 
