@@ -42,11 +42,8 @@ If BAC is trading below one, and you believe that the protocol will work and BAC
 
 **Buy and Hold the Discounted BAC**: This is less aggressive than buying BAB. Your potential return is not as great as buying BAB, but the advantage is you can sell the BAC at any time.
 
-**Buy BAB**: If you buy BAB you can potentially get bonus pricing due to the quadratic BAB pricing formula. The disadvantage is that you cannot redeem your BAB for BAC until the Oracle price is above 1.05 and the Treasury reserves have suffient BAC. When the Treasury does get sufficient reserves, BAB redeeming is done on a fist-come-first-serve basis. In other words, if there is a lot of issued BAB, it may take a number of days of seigniorage until enough BAC is minted to redeem all the BAB.
+**Buy BAB**: If you buy BAB you can potentially get bonus pricing due to the quadratic BAB pricing formula. The disadvantage is that you cannot redeem your BAB for BAC until the Oracle price is above 1.05 and the Treasury reserves have sufficient BAC. When the Treasury does get sufficient reserves, BAB redeeming is done on a fist-come-first-serve basis. In other words, if there is a lot of issued BAB, it may take a number of days of seigniorage until enough BAC is minted to redeem all the BAB.
 
 There is no advantage to buying BAB early in an Oracle period. You will get the same price (in terms of BAB issued for BAC burnt) if you wait until just before the end of Oracle period. Of course you may want to buy BAC on the spot market early in the Oracle period. 
 
-
-
-
-     
+   
