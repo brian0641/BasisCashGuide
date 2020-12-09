@@ -32,7 +32,7 @@ The dApp to interact with the Boardroom is at (https://app.basis.cash/boardroom)
 
 ## Bonds (BAB)
 
-Basis Bonds (BAB) are the mechanism used to remove BAC from circulation during period of contraction (i.e., when the Oracle price is below 1.0). When the Oracle price is below 1.0, users can send BAC to the Treasury. The BAC is burnt and BAB is issued to the user. BAB is issued at a discount, which increases as the Oracle price goes lower. BAB can only be purchased when the Oracle price is less than one. It is possible that the spot price of BAC can be trading at well below one, but yet no BAB can be purchased until the next Oracle update. 
+Basis Bonds (BAB) are the mechanism used to remove BAC from circulation during period of contraction (i.e., when the Oracle price is below 1.0). When the Oracle price is below 1.0, users can spend BAC to buy BAB. The BAC is burnt and BAB is issued to the user. BAB is issued at a discount, which increases as the Oracle price goes lower. BAB can only be purchased when the Oracle price is less than one. Due to Oracle lag, it is possible that the spot price of BAC can be trading at well below one, but yet no BAB can be purchased until the next Oracle update. 
 
 The price of one BAB, in DAI, is: `(oracle_price)^2`.
 
