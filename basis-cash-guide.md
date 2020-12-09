@@ -17,7 +17,7 @@ New BAC is minted by calling the `allocateSeigniorage()` in the Treasury contrac
 
 `allocateSeigniorage()` will only mint new BAC (seigniorage) when the Oracle price is greater than 1.05. The amount of seigniorage is calulated as: `current_bac_total_supply * (oracle_price - 1)`, where `current_bac_total_supply` is the total BAC supply minus the quantity of BAC currently reserved for future BAB purchases (the Treasury reserve). For the first `allocateSeigniorage()` call on Dec 11 (Fri) 12:00am UTC, `current_bac_total_supply` is 50000.  
 
-You can get the current BAC total supply from the `totalSupply()` function of the BAC contract (ETHERSCAN LINK) and the current Treasury reserves from the `getReserve()` function of the Treasury contract (ETHERSCAN LINK). Remember to divide by 1e18 to get "normal" units.
+You can get the current BAC total supply from the `totalSupply()` function of the BAC contract and the current Treasury reserves from the `getReserve()` function of the Treasury contract. Remember to divide by 1e18 to get "normal" units.
 
 For each call to `allocateSeigniorage()`, all the seigniorage will either be assigned to the Boardroom or to the Treasury Reserve. Specifically, if the current Treasury reserve amount is greater than 1000, the seigniorage will go to the Boardroom, if less than or equal to 1000, it will go to the Treasury Reserve. The Treasury reserve is initially set at 1001, which means the first seigniorage will go to the Boardroom.
 
@@ -27,7 +27,7 @@ The Boardroom is the contract used to distribute BAC seigniorage to BAS holders.
 
 The dApp to interact with the Boardroom is at (https://app.basis.cash/boardroom). If you want to interact directly with the Boardroom contract, `stake(uint BAS_amount)` is used to stake your BAS, `claimDividends()` claims your BAC, `withdraw(uint BAS_amount)` unstakes BAS and claims BAC, and `exit()` unstakes all your BAS and claims your BAC.
 
-Due to a small glitch in the deployment of the contracts, to claim a portion of the first seigniorage, you will need to stake to the "old" Boardroom contract (ETHERSCAN LINK). For subsequent seigniorage events, you will need to unstake from the "old" Boardroom contract and re-stake to the new one (ETHERSCAN LINK). This will be reflected in the UI.
+**Important:** Due to a small glitch in the deployment of the contracts, to claim a portion of the first seigniorage, you will need to stake to the "old" Boardroom contract. For subsequent seigniorage events, you will need to unstake from the "old" Boardroom contract and re-stake to the new one. This will be reflected in the UI.
     
 
 ## Bonds (BAB)
