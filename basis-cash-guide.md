@@ -13,7 +13,7 @@ The main advantage of using the 24 hour TWAP as the Oracle price is its resistan
 
 ## Monetary Expansion
 
-New BAC is minted by calling the `allocateSeigniorage()` in the Treasury contract, and can only be called once every 24 hours. The first call to `allocateSeigniorage()` will not occur until Dec 11 (Fri) 12:00am UTC. There is countdown timer here: [timer](https://app.basis.cash/boardroom). 
+New BAC is minted by calling the `allocateSeigniorage()` in the Treasury contract, and can only be called once every 24 hours. The first call to `allocateSeigniorage()` will not occur until Dec 11 (Fri) 12:00am UTC. There is countdown timer here: [timer](https://app.basis.cash/boardroom). To get your share of BAC, you will need to stake BAS to the Boardroom before the timer expires. 
 
 `allocateSeigniorage()` will only mint new BAC (seigniorage) when the Oracle price is greater than 1.05. The amount of seigniorage is calulated as: `current_bac_total_supply * (oracle_price - 1)`, where `current_bac_total_supply` is the total BAC supply minus the quantity of BAC currently reserved for future BAB purchases (the Treasury reserve). For the first `allocateSeigniorage()` call on Dec 11 (Fri) 12:00am UTC, `current_bac_total_supply` is 50000.  
 
